@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-less-pods",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "Generates style.less file into pods.",
   "directories": {
     "doc": "doc",
