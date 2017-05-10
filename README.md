@@ -74,16 +74,6 @@ Add import line into your main app less file:
 @import "[podModulePrefix] or pods";
 ```
 
-##### Watched folder
-Add paths for watching in the 'ember.cli-build.js' (for Ember 2+ ember-cli-build.js):
-```
-var app = new EmberApp(defaults, {
-  lessOptions: {
-    includePaths: ['app']
-  }
-});
-```
-
 ## Usage
 
 To generate styles into your pod - just run:
