@@ -6,7 +6,7 @@ Based on [ember-cli-sass-pods](https://github.com/justtal/ember-cli-sass-pods) i
 ## Installation
 
 ```
-ember install ember-cli-sass-pods 
+ember install ember-cli-less-pods 
 ```
 
 
