@@ -3,6 +3,13 @@
 Styling your pods with the less style file in the pod directory.
 Based on [ember-cli-sass-pods](https://github.com/justtal/ember-cli-sass-pods) implementation
  
+## Installation
+
+```
+ember install ember-cli-sass-pods 
+```
+
+
 ## Example of usage ember-cli-less-pods
 Say you have a contacts route and contact-box component.
 
