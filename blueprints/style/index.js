@@ -50,8 +50,10 @@ module.exports = {
 
 function setSharedOpts(options) {
     var opts = {};
-    opts.importFile = options.podsDir ? options.podsDir.replace(/(\\|\/)$/, '') : 'pods';
-    opts.filePath = path.join(options.root, 'app/styles');
+
+    console.dir(options);
+    opts.importFile = options.podsDir ? options.podsDir.replace(/(\\|\/)$/, '') : 'index';
+    opts.filePath = path.join(options.root, 'app/styles/pods');
     opts.importScssPath = path.join(opts.filePath, opts.importFile + '.less');
     opts.podsDir = options.podsDir ? opts.importFile + '/' : '';
     opts.newLine = '@import "app/' + opts.podsDir + options.name + '/style";\n';

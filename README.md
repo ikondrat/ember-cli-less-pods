@@ -62,16 +62,16 @@ You need to add the import file into your main app less file.
 
 If you use podModulePrefix your imports file would be:
 ```
-[podModulePrefix].less
+pods/[podModulePrefix].less
 ```
 otherwise it would be:
 ```
-pods.less
+pods/pods.less
 ```
 Add import line into your main app less file:
 
 ```
-@import "[podModulePrefix] or pods";
+@import "pods/[podModulePrefix] or pods/index";
 ```
 
 ## Usage
@@ -81,5 +81,15 @@ To generate styles into your pod - just run:
 ```
 ember g style [path] -p
 ```
+
+## Live reload
+You may setup live reload with `onchange` npm package 
+```
+npm install --save onchange
+```
+And setting the watch instruction in your package.json
+
+script
+
 
 Enjoy styling
