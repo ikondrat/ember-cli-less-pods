@@ -87,9 +87,21 @@ You may setup live reload with `onchange` npm package
 ```
 npm install --save onchange
 ```
-And setting the watch instruction in your package.json
+Here is example of setup for live reload with `onchange` 
 
-script
-
+package.json
+```
+"scripts": {
+  ...
+  "prestart": "npm run watch",
+  "watch": "pkill -f myapp/node_modules/.bin/onchange; mkdir -p app/styles/pods/; touch app/styles/pods/pods.less; onchange app/pods/**/*.less -- touch app/styles/pods/pods.less &> watch.log &"
+  ...
+```
+.watchmanconfig
+```
+{
+  "ignore_dirs": ["tmp", "dist", "app/styles/pods"]
+}
+```
 
 Enjoy styling
